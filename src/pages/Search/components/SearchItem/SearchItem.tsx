@@ -1,6 +1,5 @@
 import {Accordion} from "react-bootstrap";
-import './SearchItem.css'
-import {AvailableTypesEntities, SearchItemContext} from "../../../../contexts/withSearch";
+import {SearchItemContext} from "../../../../contexts/withSearch";
 import StarshipInfo from "./StarshipInfo";
 import PersonInfo from "./PersonInfo";
 import PlanetInfo from "./Planet";
