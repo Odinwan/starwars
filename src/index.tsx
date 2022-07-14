@@ -14,7 +14,7 @@ const root = ReactDOM.createRoot(
 root.render(
     <React.StrictMode>
         <CookiesProvider>
-            <BrowserRouter>
+            <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <App/>
             </BrowserRouter>
         </CookiesProvider>
