@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/starwars/static/css/main.fa78c982.css",
-    "main.js": "/starwars/static/js/main.dbec93dc.js",
+    "main.js": "/starwars/static/js/main.ce0650f0.js",
     "static/js/787.0c3f432a.chunk.js": "/starwars/static/js/787.0c3f432a.chunk.js",
     "index.html": "/starwars/index.html",
     "main.fa78c982.css.map": "/starwars/static/css/main.fa78c982.css.map",
-    "main.dbec93dc.js.map": "/starwars/static/js/main.dbec93dc.js.map",
+    "main.ce0650f0.js.map": "/starwars/static/js/main.ce0650f0.js.map",
     "787.0c3f432a.chunk.js.map": "/starwars/static/js/787.0c3f432a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fa78c982.css",
-    "static/js/main.dbec93dc.js"
+    "static/js/main.ce0650f0.js"
   ]
 }
