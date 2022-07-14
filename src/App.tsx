@@ -8,12 +8,12 @@ import {useAuthorization} from "./contexts/withAuthorization";
 
 function App() {
     const [_cookieToken, setCookieToken] = useCookies(["TOKEN"]);
-    const {authState,authAction} = useAuthorization()
+    const {authState, authAction} = useAuthorization()
     const {token} = authState
     const {handleChangeLoginField} = authAction
 
     useEffect(() => {
-        handleChangeLoginField('token','')
+        handleChangeLoginField('token', '')
         setCookieToken("TOKEN", "", {path: '/'})
     }, [])
 

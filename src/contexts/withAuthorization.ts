@@ -15,7 +15,6 @@ class AuthorizationContext implements AuthorizationInterface {
     token: string = ''
 }
 
-
 const handleChangeLoginField = <T extends keyof AuthorizationInterface>(field: T, value: AuthorizationInterface[T]): void => {
     const contextValue = context$.getValue();
 

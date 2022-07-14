@@ -5,17 +5,17 @@ import {Film, LogInParams, Planet, Specie, Starship, User, Vehicle} from './Acco
 
 
 export interface AuthServiceInterface {
-  LogIn(data: LogInParams): Promise<string>;
+    LogIn(data: LogInParams): Promise<string>;
 
-  People(searchValue:string): Promise<User[]>;
+    People(searchValue: string): Promise<User[]>;
 
-  Planets(searchValue:string): Promise<Planet[]>;
+    Planets(searchValue: string): Promise<Planet[]>;
 
-  Starships(searchValue:string): Promise<Starship[]>;
+    Starships(searchValue: string): Promise<Starship[]>;
 
-  Films(searchValue:string): Promise<Film[]>;
+    Films(searchValue: string): Promise<Film[]>;
 
-  Species(searchValue:string): Promise<Specie[]>;
+    Species(searchValue: string): Promise<Specie[]>;
 
-  Vehicles(searchValue:string): Promise<Vehicle[]>;
+    Vehicles(searchValue: string): Promise<Vehicle[]>;
 }

@@ -12,8 +12,7 @@ export class Client implements FetchClient {
      */
     async Get<Response>(url: string, headers: Collection<string>): Promise<Response> {
         const token = await localStorage.getItem('token');
-        let commonHeaders: Collection<string> = {
-        };
+        let commonHeaders: Collection<string> = {};
 
         const logIn = url.includes(LOGIN);
         if (token !== null && !logIn) {

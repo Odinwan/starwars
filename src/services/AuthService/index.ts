@@ -1,5 +1,5 @@
-import { AuthServiceInterface } from "./interfaces";
-import { AuthService } from "./AccountInfoService";
+import {AuthServiceInterface} from "./interfaces";
+import {AuthService} from "./AccountInfoService";
 
 /**
  * Фабрика сервиса загрузки информации об аккаунтах пользователей
@@ -7,5 +7,5 @@ import { AuthService } from "./AccountInfoService";
  * @param token
  */
 export const authService: { (token?: string): AuthServiceInterface } = (token) => {
-  return new AuthService(token);
+    return new AuthService(token);
 };

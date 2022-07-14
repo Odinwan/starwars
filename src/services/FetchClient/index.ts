@@ -1,5 +1,5 @@
 // Базовый интерфейс коллекции
-import { AxiosResponse } from 'axios';
+import {AxiosResponse} from 'axios';
 
 export interface Collection<T> {
     [item: string]: T;

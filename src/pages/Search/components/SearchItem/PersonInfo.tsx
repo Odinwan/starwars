@@ -4,7 +4,7 @@ interface PersonInfoProps<T> {
     person: T
 }
 
-function PersonInfo<T extends User>(props: PersonInfoProps<T>){
+function PersonInfo<T extends User>(props: PersonInfoProps<T>) {
 
     const {gender, height, mass, hair_color, eye_color, birth_year, skin_color} = props.person
 
