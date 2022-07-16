@@ -30,8 +30,8 @@ const handleLogin = async () => {
 
     if (password === '' || login === '') {
         alert(`
-            ${password === '' && "Введите пароль"}
-            ${login === '' && "Введите login"}
+            ${password === '' ? "Введите пароль" : ""}
+            ${login === '' ? "Введите login" : ""}
         `)
 
         return
