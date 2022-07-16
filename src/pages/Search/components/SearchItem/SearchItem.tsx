@@ -6,6 +6,7 @@ import PlanetInfo from "./Planet";
 import SpecieInfo from "./SpecieInfo";
 import FilmInfo from "./FilmInfo";
 import VehicleInfo from "./VehicleInfo";
+import ShowDetail from "./ShowDetail";
 
 interface SearchItemProps {
     searchItem: SearchItemContext<any>
@@ -38,7 +39,7 @@ const SearchItem = (props: SearchItemProps) => {
             <Accordion.Header>
                 <div className={'header-accordion'}>
                     <div>{replaceString(searchValue.toLowerCase(), searchValue.toLowerCase(), searchItem.name.toLowerCase())}</div>
-                    <div>{searchItem.type}</div>
+                    <div className={'type'}>{searchItem.type}</div>
                 </div>
             </Accordion.Header>
             <Accordion.Body>

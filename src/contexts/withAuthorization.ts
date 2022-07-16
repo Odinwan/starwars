@@ -47,6 +47,7 @@ const handleLogin = async () => {
     if (token) {
         const cookies = new Cookies();
         cookies.set('TOKEN', token, {path: '/'});
+        cookies.set('NAME', login, {path: '/'});
 
         context$.next({
             ...contextValue,

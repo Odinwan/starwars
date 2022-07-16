@@ -7,17 +7,19 @@ import {useCookies} from "react-cookie";
 import {useAuthorization} from "./contexts/withAuthorization";
 
 function App() {
-    const [_cookieToken, setCookieToken] = useCookies(["TOKEN"]);
+    const [cookieToken] = useCookies(["TOKEN","NAME"]);
     const {authState, authAction} = useAuthorization()
     const {token} = authState
     const {handleChangeLoginField} = authAction
 
     useEffect(() => {
-        handleChangeLoginField('token', '')
-        setCookieToken("TOKEN", "", {path: '/'})
+        if (cookieToken.TOKEN !== '') {
+            handleChangeLoginField('token', cookieToken.TOKEN)
+            handleChangeLoginField('login', cookieToken.NAME)
+        }
     }, [])
 
-    if (token === '') {
+    if (token === '' || cookieToken.TOKEN === '') {
         return (
             <Routes>
                 <Route path="/" element={<LogIn/>}/>
